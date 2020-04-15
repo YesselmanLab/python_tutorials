@@ -4,7 +4,7 @@ This repository features a set of
 ### lesson1 : What is Python?, How Python Works, Hello World and Intro to Variables
 ### lesson2 : Native types in Python, If statements
 ### lesson3 : Lists
-### lesson4 : For and while
+### lesson4 : For and while loops
 ### lesson5 : Dictionaries and sets
 ### lesson6 : Functions
 ### lesson7 : Classes
