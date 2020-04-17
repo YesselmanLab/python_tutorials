@@ -25,8 +25,21 @@ and hit enter. If nothing happens, this is likely because your computer does not
 The Yesselman Group's integrated development environment (IDE) of choice is PyCharm, which is developed by JetBrains. As students, you are eligible for an educational license to use the professional version, which you can apply for [here](https://www.jetbrains.com/community/education/#students). While waiting for your license, you can download the [PyCharm community edition](https://www.jetbrains.com/pycharm/download/#section=mac). Click on the aforementioned link, select your platform and you can download the Community version immediately!
 
 ### lesson1 : What is Python?, How Python Works, Hello World and Intro to Variables
+#### Covers:
++ background information on python and programming
++ generic python workflow
++ Hello World program that would make K&R proud
++ the use of variables to store and manipulate data
 ### lesson2 : Native types in Python, If statements
+#### Covers:
++ descriptions of `int()`,`float()`,`str()` and `bool()` types as well as operators
++ warnings about mixing `int` and `float` types as well as associated narrowing
++ syntax and conventions for `if` statements
++ nesting of `if` statements and multibranching
 ### lesson3 : Lists
+#### Covers:
++ methods to add, remove and manipulate entries in `list()` objects
++ indexing and the use of the `[]` operator
 ### lesson4 : For and while loops
 ### lesson5 : Dictionaries and sets
 ### lesson6 : Functions
