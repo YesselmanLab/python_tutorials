@@ -11,10 +11,12 @@ To download python, go the following [link](https://www.python.org/downloads/) a
 
 If python is installed, the terminal should enter the python command line interpreter and look something like this:
 
-`Python 3.7.7 (default, Mar 10 2020, 15:43:33)
+```
+Python 3.7.7 (default, Mar 10 2020, 15:43:33)
 [Clang 11.0.0 (clang-1100.0.33.17)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>>`
+>>> 
+```
 
 ### lesson1 : What is Python?, How Python Works, Hello World and Intro to Variables
 ### lesson2 : Native types in Python, If statements
