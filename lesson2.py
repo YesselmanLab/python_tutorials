@@ -34,9 +34,9 @@ int1 = 10
 # you should always be sure you using the variable types you want to be.
 ########################################################################################################################
 
-# The last thing of note about integers is that division yields the number of times the divisor could go into the dividend
-# Uncomment the line below and run the script for an example:
-# print(20/3)
+# The last thing of note about integers is that in python 2, division yields the number of times the divisor could go into the dividend
+# Uncomment the line below and run the script for an example: 
+# print(20/3) # note the different output for python3
 # How do you get the remainder for such a division? The mod "%" operator (note that there is also a %= operator, feel free to
 # explore how it works!!).
 # See the below example:
@@ -87,9 +87,9 @@ bool2 = (1 == 2)
 
 # So, because my_num == 1 (is equal to 1), the code block is executed, where my_num is incremented and then the value (2) is printed to
 # terminal. The importance of indenting is that if the code is not indented, it will just be executed, regardless of
-# the condition's status. It is important to note that the comparison must be between compatible types. i.e. comparing
-# a str and int won't work. ==> "1" == 1 BAD!!!! There are two other parts of the if statement to worry about,
-# elif : and else: . Below is an example of how to use these additional "branches"
+# the condition's status. It is important to note that comparisons do not convert types if they are different. i.e. comparing
+# a str and int will always evaluate to false, even if they reprsent the same value. ==> "1" == 1 False!!!! There are two other parts of 
+# the if statement to worry about, elif : and else: . Below is an example of how to use these additional "branches"
 
 # my_num = 5
 #
