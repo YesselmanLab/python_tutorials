@@ -9,7 +9,7 @@ To download python, go the following [link](https://www.python.org/downloads/) a
 
 `>python`
 
-If python is installed, the terminal should enter the python command line interpreter and look something like this:
+If python is installed, the terminal should enter the python command line interpreter and look something like this (though parts of the header will likely look different):
 
 ```
 Python 3.7.7 (default, Mar 10 2020, 15:43:33)
@@ -17,6 +17,12 @@ Python 3.7.7 (default, Mar 10 2020, 15:43:33)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
+To exit, simply type in 
+`>>>exit()`
+and hit enter. If nothing happens, this is likely because your computer does not know where python is located. This is a more common issue on Windows platforms and some common work arounds can be found [here](https://www.pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/). Help for Mac users can also be found [here](https://docs.python-guide.org/starting/install3/osx/).
+
+#### Setting up Pycharm
+The Yesselman Group's integrated development environment (IDE) of choice is PyCharm, which is developed by JetBrains. As students, you are eligible for an educational license to use the professional version, which you can apply for [here](https://www.jetbrains.com/community/education/#students). While waiting for your license, you can download the [PyCharm community edition](https://www.jetbrains.com/pycharm/download/#section=mac). Click on the aforementioned link, select your platform and you can download the Community version immediately!
 
 ### lesson1 : What is Python?, How Python Works, Hello World and Intro to Variables
 ### lesson2 : Native types in Python, If statements
