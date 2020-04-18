@@ -36,7 +36,6 @@ my_list2 = list([6,7,8,9,10])
 
 multitype_list = ["first", 2, 3, 4, 10.059, True]
 two_dimensional_matrix = [[1,2,3,4], [5,6,7,8]]
-
 # you can get pretty creative with these declarations so please explore them a bit!
 
 # Method 2: Appending
@@ -101,9 +100,9 @@ kill_second_entry = [1,2,3,4,5]
 kill_second_entry.pop(1)
 # print(kill_second_entry)
 
-# Method 3: Removing all instances of an value with the .remove() method
-# If you want to remove all copies of a specific value, you should use the .remove() method. It goes through the list and
-# removes every element that is equal to the specified removal value. This method is especially useful if you have a list
+# Method 3: Removing an instance with a specific value .remove() method
+# If you want to remove a value from a list by identity, use the remove .remove() method. It goes through the list and
+# removes the first element that is equal to the specified removal value. This method is especially useful if you have a list
 # of strings and want to remove specific strings. Below is an example:
 
 many_letters = ["A","B","C","A","B","C","A","B","C","A","B","C"]
