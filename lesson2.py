@@ -7,7 +7,7 @@
 # will probably work with C++, which places a lot of significance on types, so it's important you feel comfortable with
 # them!
 # The four basic types in Python are int (integer), float (decimal number), str (text) and boolean (true/false)
-# A float is probably what you think of as normal number and it can store numeric information less than 0, i.e.
+# A float is probably what you think of as normal number and it can store numeric information less than 1 and greater than 0, i.e.
 float1 = float(0.01)
 # is a legal statement. The above variable declaration looks a bit different than "float1 = 0.01" but is equivalent. Setting
 # a variable equal to a value without the "float()" part is called a literal declaration. It is generally preferable to
@@ -79,11 +79,11 @@ bool2 = (1 == 2)
 # 2. everything in the [code to execute] block must be indented from the if statement
 # This is a little pedantic, so lets just do an example:
 
-# my_num = 1
-#
-# if my_num == 1: # statement ends with :
-#     my_num += 1 # code to execute is indented by one tab compared to the if statement
-#     print(my_num)
+my_num = 1
+
+if my_num == 1: # statement ends with :
+    my_num += 1 # code to execute is indented by one tab compared to the if statement
+    print(my_num)
 
 # So, because my_num == 1 (is equal to 1), the code block is executed, where my_num is incremented and then the value (2) is printed to
 # terminal. The importance of indenting is that if the code is not indented, it will just be executed, regardless of
@@ -91,28 +91,28 @@ bool2 = (1 == 2)
 # a str and int won't work. ==> "1" == 1 BAD!!!! There are two other parts of the if statement to worry about,
 # elif : and else: . Below is an example of how to use these additional "branches"
 
-# my_num = 5
-#
-# if my_num == 1:
-#     print("my_num is 1")
-# elif my_num == 2:
-#     print("my_num is 2")
-# else:
-#     print("my_num is greater than 2")
+my_num = 5
+
+if my_num == 1:
+    print("my_num is 1")
+elif my_num == 2:
+    print("my_num is 2")
+else:
+    print("my_num is greater than 2")
 
 # The last thing to cover here is that you can also nest if statements, where another if block is put inside the first
 # and so on. Note that the nested if statement has to be tabbed in, and twice ditto for its code blocks that will be
 # executed:
 
-# num_1 = 10
-#
-# if my_num < 20:
-#     if my_num > 5:
-#         print("number is greater than 5 and less than 20")
-#     else:
-#         print("number is less than 5 or equal to 5")
-# else:
-#     print("number is greater than or equal to 20")
+num_1 = 10
+
+if my_num < 20:
+    if my_num > 5:
+        print("number is greater than 5 and less than 20")
+    else:
+        print("number is less than 5 or equal to 5")
+else:
+    print("number is greater than or equal to 20")
 
 # play with the above code a bit before moving on to the following homework problems:
 ########################################################################################################################
