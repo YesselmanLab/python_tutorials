@@ -30,7 +30,7 @@
 # python ignores whatever comes after. These are called comments. Uncomment the below line and run this python script as
 # described in Part II. What do you get?
 
-#print("Hello World")
+# print("Hello World")
 
 # Congrats on running your first program! Here you are using a function (more on those later), but print() is a very
 # useful one that "prints" information to the terminal. Above you are just using it to print out text, but you can also

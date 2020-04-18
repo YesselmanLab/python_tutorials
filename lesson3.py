@@ -16,8 +16,8 @@
 my_list = [1,2,3,4,5]
 my_list2 = list([6,7,8,9,10])
 
-#print(my_list)
-#print(my_list2)
+# print(my_list)
+# print(my_list2)
 
 # The basic syntax is [list_name] = [ elements ]. Note the elements HAVE to be surrounded with square brackets. Because
 # lists have no value themselves, it is often important to know their size. In python the function that finds a list's
@@ -43,9 +43,9 @@ two_dimensional_matrix = [[1,2,3,4], [5,6,7,8]]
 # Appending is a way to add another element at the end of a list. Below is an example of appending a value to a list
 
 my_list3 = [0,1,2]
-#print(len(my_list3))
+# print(len(my_list3))
 my_list3.append(3)
-#print(len(my_list3))
+# print(len(my_list3))
 
 # What do you think will be printed? Uncomment and see. It should be noted that when you append to a list, you always
 # increase the size of the list by 1.
@@ -96,7 +96,7 @@ need_to_empty = []
 # III). Either way, below are some examples:
 kill_first_entry = [1,2,3,4,5]
 kill_first_entry.pop(0)
-#print(kill_first_entry)
+# print(kill_first_entry)
 kill_second_entry = [1,2,3,4,5]
 kill_second_entry.pop(1)
 # print(kill_second_entry)
@@ -108,6 +108,7 @@ kill_second_entry.pop(1)
 
 many_letters = ["A","B","C","A","B","C","A","B","C","A","B","C"]
 # print(len(many_letters))
+
 many_letters.remove("A")
 many_letters.remove("B")
 # print(len(many_letters))
@@ -144,10 +145,10 @@ slice_list = [1,2,3,4,5]
 # print(slice_list[1:])
 
 # printing first element to one less than the last
-# print(slice_list[:-2])
+# print(slice_list[:-1])
 
 # printing second and third elements
-print(slice_list[1:3])
+# print(slice_list[1:3])
 
 ########################################################################################################################
 # Part V: The "in" statement and similarities to strings
@@ -166,6 +167,7 @@ else:
 # future, but it is very useful to know how to use the [] operator. What do you think the following will print?
 
 str1 = "strings are just like lists!"
+
 # print(str1[0])
 # print(str1[:-20])
 

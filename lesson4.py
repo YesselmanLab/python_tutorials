@@ -10,9 +10,9 @@
 
 num_list = [1,2,4,6,7,65,5]
 
-#for number in num_list:
-#  print(number)
-  
+# for number in num_list:
+#     print(number)
+
 # What does the above code do? How would you change it so that the numbers only print if the number is less than 5? 
 # The For loop has the following format and similar indentation rules to if loops:
 
@@ -50,7 +50,7 @@ matrix = [
 # statement is true. It has the following structure:
 #
 # While [Boolean]:
-#   [code to execute'
+#   [code to execute]
 #
 # Below is a rewrite of the above "Hello world" For loop. Uncomment it and see what happens.
 # hw_count = 0
@@ -66,7 +66,7 @@ matrix = [
 #
 # Infinite looping may not seem useful, but uncomment and run the following example:
 # 
-# While True:
+# while True:
 #   my_num = input("enter a number")
 #   print(my_num)
 #
@@ -74,17 +74,17 @@ matrix = [
 # make sense to you? Why or why not? Either way, this strategy of infinite looping is used in many applications where real
 # time events happen, like video games or webpages. 
 ########################################################################################################################
-# Part III: Combinining Loops and If statements
+# Part III: Combining Loops and If statements
 # When used together, Loops and If statements give you the ability to rapidly manipulate data in a conditional manner. 
 # Consider the following example:
 
 test_values = [1,2,3,4,5,6,7,8,9,10]
 
-for value in test_values:
-    if value%2 == 0:
-    # print(value, " is even")
-    else:
-    # print(value, " is odd")
+# for value in test_values:
+#     if value%2 == 0:
+#         print(value, " is even")
+#     else:
+#         print(value, " is odd")
 # Note the combination of a variable and a string with the "," in print. Print allows formatted output (which we will cover
 # more later) and it is very useful for debugging and making better program flow. With this knowledge, the answer to Lesson2.py's 
 # challenge problem likely makes a lot more sense:
@@ -92,9 +92,9 @@ for value in test_values:
 rna_sequence = "GCUAGCCUAAAAUCUTUAA"
 allowed_bases = ["A","C","G","U"]
 
-for nucleotide in rna_sequence:
-    if nucleotide not in allowed_bases:
-      print("nucleotide 
+# for nucleotide in rna_sequence:
+#     if nucleotide not in allowed_bases:
+#       print(nucleotide, "not an allowed base")
     
 # In addition to analyzing data, for loops can be used to generate data. The following makes a "checkerboard" string:
 
@@ -106,18 +106,19 @@ for row in range(5):
           checker_board += "X"
        else:
           checker_board += " "
-     checker_board += "\n"
-# print(checker_board)
+    checker_board += "\n"
+print(checker_board)
 # Somtimes, you also want to break out of a loop when some condition is met. This is done with the "break" keyword, as shown
 # below:
 
 rna_sequence = "GGACGCUTA"
 allowed_bps = ["A", "C", "G", "U"]
 
-for bp in rna_sequence:
-  if bp not in allowed_bps:
-    # print(bp," is not an allowed bp")
-    break
+# for bp in rna_sequence:
+#   if bp not in allowed_bps:
+#     # print(bp," is not an allowed bp")
+#     break
+
 ########################################################################################################################
 # Homework
 # (T/F) Loops are good for dealing with iterable objects like lists or strings.
