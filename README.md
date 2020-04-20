@@ -41,8 +41,13 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 + methods to add, remove and manipulate entries in `list()` objects
 + indexing and the use of the `[]` operator
 ### lesson4 : For and while loops
-### lesson5 : Dictionaries and sets
-### lesson6 : Functions
+#### Covers:
++ basic looping for both `for` and `while` loops
++ combinding looping and conditionals
++ using `break` for extra control flow
+### lesson5 : Functions
++ TODO fill this in
+### lesson6 : Dictionaries and Sets
 ### lesson7 : Classes
 ### lesson8 : External modules
 ### lesson9 : Unittesting
