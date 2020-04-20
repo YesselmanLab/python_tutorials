@@ -8,7 +8,7 @@
 
 def helloworld():
   print("Hello World")
- 
+
 # helloworld()
 
 # What happened? What exactly is going on here? Well, on line 9, a function named "helloworld" is defined and then called. 
@@ -28,12 +28,11 @@ def helloworld():
 # 1. A function that takes two numbers and adds them
 
 def add_numbers(num1,num2):
-  num1 += num2
+  print(num1," + ",num2," = ",num1 + num2)
   
 n1 = 10
 n2 = 20
-add_numbers(n1,n2)
-# print(n1)
+# add_numbers(n1,n2)
 
 # 2. A function that takes two numbers and RETURNS their product
 
@@ -73,11 +72,9 @@ def legal_base_pairs(input_sequence):
 
 # Functions can also call other functions
 
-
 def print_here():
   print("HERE")
-  
-  
+
 def example_calling_other_fns():
   for i in range(10):
     print_here()
@@ -91,14 +88,20 @@ def get_maximum(input_list):
       if val > current_max:
         current_max = val
     return current_max
-#TODO test that this actually works 
 
-def square_root(input_value):
-  threshold = 0.001
-  root = input_value
-  while abs(root*root-input_value) > threshold:
-    root = (root + input_value/root) > threshold
+def square_root(input_number):
+  if (input_number == 0):
+    return 0
+  root = input_number/2.
+  new_root = root + 1
+
+  while (root != new_root):
+    difference = input_number/root
+
+    new_root = root
+    root = (root + difference)/2
   return root
+
 ########################################################################################################################
 # Part III: Some Rules and Techincal Stuff
 # Clearly, there are a lot of things you can do with functions. That being said, there are a few final rules to note:
@@ -126,13 +129,14 @@ def print_list_elements(input_list):
 # Homework
 # (T/F) The following is a legal function name: tHiS_iS_mY_fUnCtIoN_
 # (T/F) A function has to return something
-# Bug Buster: Kathy is working on some python that returns the absolute value of a number, but she doesn't want to change
-# the value of the original variable. What is she doing wrong? How will she fix it?
+# Bug Buster: Kathy is trying to write some code to find the absolute value of a number. What is wrong with what she has
+# written
 
-def absolute_value(input_number):
-  if input_number < 0:
-    input_number *= -1
-  return input_number
+# number = -1.
+# def absolute_value():
+#   if number < 0:
+#     number *= -1
+#   return number
 
 # Easy difficulty problem
 # fill out the below function so that it returns a number squared
@@ -149,5 +153,5 @@ def min_value_list(input_list):
 # valid and "False" if not
 # For it to be valid, it has to contain only the letters "(", ")" and "." and the number of "(" and ")" letters must be the same. 
 
-
-
+def is_valid_structure(input_ss):
+  pass
