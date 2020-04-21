@@ -178,8 +178,8 @@ str1 = "strings are just like lists!"
 # below, how would you do this?
 unl_students = [] # assume this is a real list
 
-# Create a list with the sequence [1,2,3] repeated 100 times. Print the initial list size, then remove all 2's and
-# print the list size again.
+# Create a list with the sequence [1,2,3] repeated 100 times. Print the initial list size, remove the first 2 and the last
+# element in the list. What is the list's size now?
 
 # Print out the type of the first element in the below list:
 hw_list = ["A", "B", "C"]
