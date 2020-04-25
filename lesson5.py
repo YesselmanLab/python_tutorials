@@ -4,7 +4,7 @@
 # Part I: Basics
 # Since lesson1, we've been using functions to get things done. print(), len() and type() are all great functions, but 
 # what do you do if you want a custom function to help prove your Nobel Prize-winning idea? Well, you just write your own!
-# Below is an example of a function, uncomment line 12 and see what happens when you run the script:
+# Below is an example of a function. Uncomment line 12 and see what happens when you run the script:
 
 def helloworld():
   print("Hello World")
@@ -18,10 +18,17 @@ def helloworld():
 #      [CODE_TO_EXECUTE]
 #
 # Where:
+# the keyword "def" is the first word on the line
 # + FUNCION_NAME is a name that can have the letters A-Z (and lowercase) _ or 0-9
 # + ARGUMENTS are what you give the function in between the parantheses when you call the function (like variables or 
 # text in the print() function)
+# + there is a colon (:) at the end of the declaration line
 # + CODE_TO_EXECUTE is the block of code that the function "owns". It is tabbed over as with if and for loops
+# Why use functions? 
+# + functions are great for organizing code
+# + better control of program flow => code isn't executed unless the function is called
+# + makes code more read-able as names have succint definitions
+# + allows use of functionality without having to read and undesrstand all source code
 ########################################################################################################################
 # Part II: Examples, Examples, and More Examples!
 # Like most things, functions are better shown than explained, so here are some examples:
