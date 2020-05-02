@@ -19,7 +19,7 @@ def helloworld():
 #
 # Where:
 # the keyword "def" is the first word on the line
-# + FUNCION_NAME is a name that can have the letters A-Z (and lowercase) _ or 0-9
+# + FUNCTION_NAME is a name that can have the letters A-Z (and lowercase) _ or 0-9
 # + ARGUMENTS are what you give the function in between the parantheses when you call the function (like variables or 
 # text in the print() function)
 # + there is a colon (:) at the end of the declaration line
@@ -28,7 +28,7 @@ def helloworld():
 # + functions are great for organizing code
 # + better control of program flow => code isn't executed unless the function is called
 # + makes code more read-able as names have succint definitions
-# + allows use of functionality without having to read and undesrstand all source code
+# + allows use of functionality without having to read and understand all source code
 ########################################################################################################################
 # Part II: Examples, Examples, and More Examples!
 # Like most things, functions are better shown than explained, so here are some examples:
@@ -53,7 +53,7 @@ def multiply(number_1, number_2):
 
 def get_pi():
   return 3.1415
-
+my_string = str(1.0) # my_string = "1.0"
 # 4. A function that takes no arguments and returns nothing
 
 def print_to_100():
@@ -75,6 +75,7 @@ def legal_base_pairs(input_sequence):
   for nt in input_sequence:
     if nt not in allowed_pairs:
       return False
+
   return True
 
 # Functions can also call other functions

@@ -28,7 +28,7 @@ string_set.add("D")
 
 
 def clear_set(input_set):
-"""Method that clears a set and shows size before and after"""
+  """Method that clears a set and shows size before and after"""
   print("Size before clearing {}".format(len(input_set)))
   input_set.clear()
   print("Size after clearing {}".format(len(input_set)))
@@ -39,12 +39,12 @@ def clear_set(input_set):
 class_scores = [90,93,95,80,94,90,49,93,87,95]
 
 def get_unique_scores(score_list):
-"""Method that gets the unique scores from a set of test scores"""
+  """Method that gets the unique scores from a set of test scores"""
   score_set = set(score_list)
   print("There are {} unique scores in this list".format(len(score_set)))
 
 def is_lucky_number(input_number):
-"""Method that checks if an input number is a lucky number."""
+  """Method that checks if an input number is a lucky number."""
   lucky_number_list = {1, 3, 7, 9, 13, 15}
   if input_number in lucky_number_list:
     print("{} is a lucky number".format(input_number))

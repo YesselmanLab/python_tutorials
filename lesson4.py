@@ -11,7 +11,7 @@
 num_list = [1,2,4,6,7,65,5]
 
 # for number in num_list:
-#     print(number)
+    # print(number)
 
 # What does the above code do? How would you change it so that the numbers only print if the number is less than 5? 
 # The For loop has the following format and similar indentation rules to if loops:
@@ -32,8 +32,8 @@ my_string = "this_is_a_string"
 # A useful tool for doing something a set number of times is the range() function. The range takes an integer and makes a 
 # list from 0 to n-1 i.e. range(4) => [0,1,2,3]. Consider the following code that prints "Hello World" 100 times:
 
-# for i in range(100):
-#   print("Hello World")
+for i in range(100):
+  print("Hello World")
 
 # Keep in mind that if the iterable object contains iterable objects, they won't be iterated over automatically. What will happen 
 # when you run the code on lines 44/45?
@@ -56,7 +56,7 @@ matrix = [
 # hw_count = 0
 # while hw_count < 100:
 #   print("Hello World")
-#   hw_count +=1 # what happens if this is deleted? 
+#   hw_count += 1 # what happens if this is deleted?
 #
 # often times, you can achieve a repitive process with a While or For Loop, but it is useful to know how to do both. A unique
 # ability of the While loop is to do "infinite" looping. Consider the following code. Will it ever stop?
@@ -65,7 +65,7 @@ matrix = [
 #   print("Will this loop stop?")
 #
 # Infinite looping may not seem useful, but uncomment and run the following example:
-# 
+#
 # while True:
 #   my_num = input("enter a number")
 #   print(my_num)
@@ -94,12 +94,11 @@ allowed_bases = ["A","C","G","U"]
 
 # for nucleotide in rna_sequence:
 #     if nucleotide not in allowed_bases:
-#       print(nucleotide, "not an allowed base")
+#       print(nucleotide, " not an allowed base")
     
 # In addition to analyzing data, for loops can be used to generate data. The following makes a "checkerboard" string:
 
 checker_board = ""
-
 for row in range(5):
     for col in range(5):
        if (row*5 + col)%2 == 0:
@@ -107,17 +106,17 @@ for row in range(5):
        else:
           checker_board += " "
     checker_board += "\n"
-print(checker_board)
+# print(checker_board)
 # Somtimes, you also want to break out of a loop when some condition is met. This is done with the "break" keyword, as shown
 # below:
 
 rna_sequence = "GGACGCUTA"
 allowed_bps = ["A", "C", "G", "U"]
 
-# for bp in rna_sequence:
-#   if bp not in allowed_bps:
-#     # print(bp," is not an allowed bp")
-#     break
+for bp in rna_sequence:
+  if bp not in allowed_bps:
+    print(bp," is not an allowed bp")
+    break
 
 ########################################################################################################################
 # Homework
