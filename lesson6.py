@@ -26,7 +26,6 @@ string_set.add("D")
 
 # additionally there are .clear() and .remove() methods as with lists. See the example below that clears a set:
 
-
 def clear_set(input_set):
   """Method that clears a set and shows size before and after"""
   print("Size before clearing {}".format(len(input_set)))
@@ -63,13 +62,13 @@ strings = raw_data.split()
 # What does the above code do? Given what was discussed above, below is a splitting of some comma-separated data
 comma_separated = "10,9,8,7,6,5,4,3,2,1"
 data_tokens = comma_separated.split(",")
-#print(len(data_tokens))
+# print(len(data_tokens))
 
 # The reverse of .split() is .join(). It is called in the following manner: DELIMITER.join([STRING_LIST]). Consider the 
 # example below:
 my_strings = ["first","second","third","fourth"]
 connected = ",".join(my_strings)
-#print(connected)
+# print(connected)
 
 # To see if a string contains a substring, you can make use of .find(). This method takes a substring as an argument and 
 # returns the index that the desired substring begins at, else -1 if the string does not contain that index. Below are
