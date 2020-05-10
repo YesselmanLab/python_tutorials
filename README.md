@@ -45,13 +45,23 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 + basic looping for both `for` and `while` loops
 + combinding looping and conditionals
 + using `break` for extra control flow
-### lesson5 : Functions\
+### lesson5 : Functions
 + anatomy of functions -> name, return types, parameters
 + how to write user defined functions
 + more detail on function calling
-### lesson6 : Dictionaries and Sets
-### lesson7 : Classes
-### lesson8 : External Modules and File IO
-### lesson9 : Unittesting
+### lesson6 : Sets and Strings
++ intro to the `set()` object, with an emphasis on use in summarizing datasets
++ revisit strings and string maninpulation, covering the following methods:
+	+ `.split()`
+	+ `.join()`
+	+ `.find()`
+	+ `.trim()`
+### lesson7 : Dictionaries
++ literal declaration of `dict()` objects 
++ manipulating key-value pairs with the `[]` operator
++ iterating through dict entries with `.values()`,`.keys()` and `.items()`
+### lesson8 : Classes
+### lesson9 : External Modules and File IO
+### lesson10 : Unittesting
 ### lesson11 : Data Analysis I: Intro to Pandas
 ### lesson12 : Data Analysis II: Intro to Matplotlib

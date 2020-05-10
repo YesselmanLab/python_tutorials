@@ -38,7 +38,7 @@ school_class = {
         "students" : [
             {
                 "name" : "Joe",
-                "major" : "biochem"
+                "major" : "biophysic"
                 }
             ],
         "teacher" : {
@@ -64,12 +64,12 @@ school_class = {
 list_dict = {
         "list" : []
         }
-#print(list_dict["list"])
+# print(list_dict["list"])
 for new_num in range(10):
     list_dict["list"].append(new_num)
-#print(list_dict["list"])
+# print(list_dict["list"])
 list_dict["list"] *= 10
-#print(list_dict)
+# print(list_dict)
 
 # As with sets and lists, dicts support the "in" operator. For this data structure, it is often important to make sure
 # you aren't overwriting an existing value. Consider the following function that tells how many time each letter appears 
@@ -113,13 +113,13 @@ def explore_keys_and_values(input_dict):
     for value in input_dict.values():
         print(value)
 
-#explore_keys_and_values(demo)
+# explore_keys_and_values(demo)
 
 # Still, sometimes you will want to iterate through both keys and values in dictionary at the same time. This can be achieved
 # easily with .items(). See an example below using this method:
 
-#for key, value in demo.items():
-#    print("{} : {}".format(key,value)
+# for key, value in demo.items():
+#    print("{} : {}".format(key,value))
 
 ########################################################################################################################
 # Part IV: More Examples
@@ -135,6 +135,7 @@ def sort_student_score(name_list, score_list):
     score_dict = {}
     for grade in "A B C D F".split():
         score_dict[grade] = []
+
     for name, score in zip(name_list, score_list):
         if score >= 90:
             score_dict["A"].append(name)
@@ -147,6 +148,7 @@ def sort_student_score(name_list, score_list):
         else:
             score_dict["F"].append(name)
     return score_dict
+
 def get_bp_content(input_sequence):
     """Method that takes an input_sequence string and returns a dictionary of normalized bp content"""
     total_nts = len(input_sequence)
@@ -156,6 +158,7 @@ def get_bp_content(input_sequence):
             bp_content[nt] = 1.
         else:
             bp_content[nt] += 1.
+
     for bp in bp_content.keys():
         bp_content[bp] /= float(total_nts)
     return bp_content
