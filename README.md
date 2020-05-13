@@ -61,6 +61,10 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 + manipulating key-value pairs with the `[]` operator
 + iterating through dict entries with `.values()`,`.keys()` and `.items()`
 ### lesson8 : Classes
++ how to write a `class`
++ discussion of attributes, methods and magic methods
++ explanation of best practices for writing effective classes
++ does NOT cover polymorphism/inheritance
 ### lesson9 : External Modules and File IO
 ### lesson10 : Unittesting
 ### lesson11 : Data Analysis I: Intro to Pandas
