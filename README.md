@@ -70,4 +70,4 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 ### lesson11 : Data Analysis I: Intro to Pandas
 ### lesson12 : Data Analysis II: Intro to Matplotlib
 ### Miscellaneous Resources
-+ Especially for those new to programming, [Edabit](edabit.com) is a helpful website. This is a coding website filled with tons of practice problems, starting all the way from "Hello World" programs. When just starting, spending 15-30 minutes a day on Edabit will greatly improve one's coding skills. On this site, it is important to read other solutions after finishing a problem which can be done by clicking the "view other solutions" button after completing a challenge.
++ Especially for those new to programming, [Edabit](https://edabit.com) is a helpful website. This is a coding website filled with tons of practice problems, starting all the way from "Hello World" programs. When just starting, spending 15-30 minutes a day on Edabit will greatly improve one's coding skills. On this site, it is important to read other solutions after finishing a problem which can be done by clicking the "view other solutions" button after completing a challenge.
