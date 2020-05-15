@@ -151,8 +151,7 @@ max(numbers)
 
 def item_count(input_list,input_item):
   pass
-# create a function that tells how many times 'input_item' is found in 'input_list'. Make sure your implementation makes
-# use of set()
+# create a function that tells how many times 'input_item' is found in 'input_list'. 
 
 def long_A_stretch(input_sequence):
   pass

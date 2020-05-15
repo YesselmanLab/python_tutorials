@@ -1,6 +1,6 @@
 # Welcome to the sixth lesson in the Yesselman Group's Python series
 # Topics covered: dictionaries
-########################################################################################################################G
+########################################################################################################################
 # Part I: Dictionary Basics
 # As explored in the previous lesson, sets are a type of "associative" container, roughly meaning they store unique values
 # only. While sets are useful, dictionaries allow you to additionally associate something with that unique value. In python,
@@ -23,7 +23,7 @@ my_dict = {
 #   KEY2 : VALUE2,
 #   KEY3 : VALUE3,
 #       ... }
-# Not that keys have to be "immutable" (unchangeable) types. For now, this just means that they must be strings, integers
+# Note that keys have to be "immutable" (unchangeable) types. For now, this just means that they must be strings, integers
 # booleans, or floats. Values can be anything though, including lists or other dictionaries! Below are some more advanced
 # declaration examples
 
@@ -38,8 +38,12 @@ school_class = {
         "students" : [
             {
                 "name" : "Joe",
-                "major" : "biophysic"
-                }
+                "major" : "biophysics"
+                },
+            {
+                "name" : "Chris",
+                "major" : "chemistry"
+            }
             ],
         "teacher" : {
             "name" : "Rhiju" 
@@ -88,7 +92,8 @@ def make_content_dict(input_string):
     return frequency_dict
 
 str_dict = make_content_dict(test_sentence)
-#print(str_dict)
+# for k,v in str_dict.items():
+#     print(k,v)
 ########################################################################################################################
 # Part III: Iterating through dicts
 # Without knowing all of the keys in a dict, using a for loop is the only way to visit all key value pairs. By default, 
@@ -163,7 +168,7 @@ def get_bp_content(input_sequence):
         bp_content[bp] /= float(total_nts)
     return bp_content
 ########################################################################################################################
-# Homeowrk
+# Homework
 # (T/F) Dictionaries are associative containers.
 # (T/F) Dictionaries can have identical keys.
 # (T/F) A for loop automatically iterates through a dictionary's values

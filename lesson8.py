@@ -1,4 +1,4 @@
-# Welcome to the eigth lesson in the Yesselman Group's Python series
+# Welcome to the eighth lesson in the Yesselman Group's Python series
 # Topics covered: Classes
 ########################################################################################################################
 # Part I: Class Basics
@@ -38,7 +38,7 @@ my_student.set_name("David")
 
 # Uncomment line 37 to see what happens! The dot operator also allows a class to store variables, often called "attributes".
 # The concept here is similar to key-value pairs in dictionaries, although the calling convention is a bit different. Returning
-# to the above exaample, a class is declared using the following syntax:
+# to the above example, a class is declared using the following syntax:
 
 # class CLASSNAME:
 #   [INDENTED IN METHOD DECLARATIONS]
@@ -96,14 +96,14 @@ class Money:
     def __eq__(self,other):
         return self.amount == other.amount
 
-
 money1 = Money(1.)
 money2 = Money(2.)
 money3 = Money(3.)
 
-money2 = money2 + money1 
+money2 = money2 + money1
 
-# print(money2 == money3)
+print(money2 == money3)
+print(money1)
 # In reality, most magic methods do not need to be made for a class, but it is useful to understand that operators (a.k.a. +,-,
 # \,+=, -=, etc.) are actually just anonymous functions. In practice, two common uses of magic methods are comparison operators 
 # and __str__(), which controls how an object will appear if printed to the screen. This can be helpful as by default, Python 
@@ -134,17 +134,17 @@ class Pet:
 
 dog = Pet("dog","Fido")
 dog.feed(10)
-#print(dog)
+# print(dog)
 dog.exercise()
-#print(dog)
+# print(dog)
 dog2 = Pet("dog","Fido")
-#print(dog==dog2)
+# print(dog==dog2)
 ########################################################################################################################
 # Part III: Guidelines for Creating Classes
 # Classes are a building block of larger programs, meaning well-designed ones are crucial for good programs. A common 
 # mistake is to make classes do too little, or too much. A good rule of thumb is that if a class only has a constructor 
 # and a single method, it should probably be a built-in object like a dictionary. This guideline is also relevant for 
-# classes that perform minimal transformations on the data they contain and primarly serve to store and change values.
+# classes that perform minimal transformations on the data they contain and primarily serve to store and change values.
 # For example the below TestScore class is better suited as a dictionary of values:
 
 class TestScore:
