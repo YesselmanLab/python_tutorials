@@ -215,4 +215,4 @@ class RNA:
     # 5. longest_A_substring() -> return the length of the longest stretch of A's
     # string must constain only (, . and ), the number of ('s must equal )'s and the sequnce only contains the BPs A, C, G and U
     # 6. __str__() -> be creative and come up with an informative string representation of the object
-    # 7. __eq__() -> here you have to test what would make two RNA's equal to eachother
+    # 7. __eq__() -> here you have to test what would make two RNA's equal to each other
