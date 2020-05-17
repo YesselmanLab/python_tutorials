@@ -141,7 +141,19 @@ class RNAUnittests(unittest.TestCase):
         self.assertTrue(large.legal())
 
     def test_longest_A_substring(self):
-        """Testing that the longest """
+        """Testing that the .longest_A_substring() method functions properly"""
+        no_As = RNA("GGGG","....")
+        self.assertEqual(no_As.longest_A_substring(),0)
+        long_A = RNA("G" + "A"*20 + "C","."*22)
+        self.assertEqual(long_A.longest_A_substring(),20)
+
+    def test_eq(self):
+        """Testing the overloaded __eq__() method for the RNA class"""
+        rna1 = RNA("A",".")
+        rna2 = RNA("A",".")
+        rna3 = RNA("G",'.')
+        self.assertTrue(rna1 == rna2)
+        self.assertFalse(rna2 == rna3)
 
 if __name__ == "__main__":
     unittest.main()
