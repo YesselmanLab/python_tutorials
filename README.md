@@ -66,6 +66,10 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 + explanation of best practices for writing effective classes
 + does NOT cover polymorphism/inheritance
 ### lesson9 : External Modules and File IO
++ how to use `import`, `from [MODULE] import []` and `import [MODULE] as [ALIAS]`
++ best practices for using modules 
++ reading and writing to files 
++ using `open()` to create file objects and `.read()`/`.write()`
 ### lesson10 : Unittesting
 ### lesson11 : Data Analysis I: Intro to Pandas
 ### lesson12 : Data Analysis II: Intro to Matplotlib
