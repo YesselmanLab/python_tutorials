@@ -93,8 +93,10 @@ class Money:
     def __add__(self,other):
         return Money(self.amount + other.amount)
 
-    def __eq__(self,other):
-        return self.amount == other.amount
+
+    
+    def __str__(self):
+        return "This is a dog"
 
 money1 = Money(1.)
 money2 = Money(2.)
@@ -102,8 +104,9 @@ money3 = Money(3.)
 
 money2 = money2 + money1
 
-print(money2 == money3)
-print(money1)
+print(money3 == money3)
+#print(money2.__eq__(money3))
+#print(money1)
 # In reality, most magic methods do not need to be made for a class, but it is useful to understand that operators (a.k.a. +,-,
 # \,+=, -=, etc.) are actually just anonymous functions. In practice, two common uses of magic methods are comparison operators 
 # and __str__(), which controls how an object will appear if printed to the screen. This can be helpful as by default, Python 
@@ -129,16 +132,16 @@ class Pet:
         return "Pet name: {} type: {} weight: {}".format(self.name,self.type,self.weight)
 
     def __eq__(self,other):
-        return self.type == other.type and self.name == other.name and self.hungry == other.name and self.weight == other.weight
+        return self.type == other.type and self.name == other.name and self.hungry == other.hungry and  self.weight == other.weight
 
 
 dog = Pet("dog","Fido")
 dog.feed(10)
-# print(dog)
+print(dog)
 dog.exercise()
-# print(dog)
+print(dog)
 dog2 = Pet("dog","Fido")
-# print(dog==dog2)
+print(dog==dog2)
 ########################################################################################################################
 # Part III: Guidelines for Creating Classes
 # Classes are a building block of larger programs, meaning well-designed ones are crucial for good programs. A common 

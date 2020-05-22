@@ -24,53 +24,52 @@ and hit enter. If nothing happens, this is likely because your computer does not
 #### Setting up Pycharm
 The Yesselman Group's integrated development environment (IDE) of choice is PyCharm, which is developed by JetBrains. As students, you are eligible for an educational license to use the professional version, which you can apply for [here](https://www.jetbrains.com/community/education/#students). While waiting for your license, you can download the [PyCharm community edition](https://www.jetbrains.com/pycharm/download/#section=mac). Click on the aforementioned link, select your platform and you can download the Community version immediately!
 
-### lesson1 : What is Python?, How Python Works, Hello World and Intro to Variables
+### lesson01 : What is Python?, How Python Works, Hello World and Intro to Variables
 #### Covers:
 + background information on python and programming
 + generic python workflow
 + Hello World program that would make K&R proud
 + the use of variables to store and manipulate data
-### lesson2 : Native types in Python, If statements
+### lesson02 : Native types in Python, If statements
 #### Covers:
 + descriptions of `int()`,`float()`,`str()` and `bool()` types as well as operators
 + warnings about mixing `int` and `float` types as well as associated narrowing
 + syntax and conventions for `if` statements
 + nesting of `if` statements and multibranching
-### lesson3 : Lists
-#### Covers:
+### lesson03 : Lists
 + methods to add, remove and manipulate entries in `list()` objects
 + indexing and the use of the `[]` operator
-### lesson4 : For and while loops
-#### Covers:
+### lesson04 : For and while loops
 + basic looping for both `for` and `while` loops
 + combinding looping and conditionals
 + using `break` for extra control flow
-### lesson5 : Functions
+### lesson05 : Functions
 + anatomy of functions -> name, return types, parameters
 + how to write user defined functions
 + more detail on function calling
-### lesson6 : Sets and Strings
+### lesson06 : Sets and Strings
 + intro to the `set()` object, with an emphasis on use in summarizing datasets
 + revisit strings and string maninpulation, covering the following methods:
 	+ `.split()`
 	+ `.join()`
 	+ `.find()`
 	+ `.trim()`
-### lesson7 : Dictionaries
+### lesson07 : Dictionaries
 + literal declaration of `dict()` objects 
 + manipulating key-value pairs with the `[]` operator
 + iterating through dict entries with `.values()`,`.keys()` and `.items()`
-### lesson8 : Classes
+### lesson08 : Classes
 + how to write a `class`
 + discussion of attributes, methods and magic methods
 + explanation of best practices for writing effective classes
 + does NOT cover polymorphism/inheritance
-### lesson9 : External Modules and File IO
+### lesson09 : External Modules and File IO
 + how to use `import`, `from [MODULE] import []` and `import [MODULE] as [ALIAS]`
 + best practices for using modules 
 + reading and writing to files 
 + using `open()` to create file objects and `.read()`/`.write()` to access text data
 ### lesson10 : Unittesting
+
 ### lesson11 : Data Analysis I: Intro to Pandas
 ### lesson12 : Data Analysis II: Intro to Matplotlib
 ### Miscellaneous Resources
