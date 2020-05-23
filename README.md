@@ -69,8 +69,13 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 + reading and writing to files 
 + using `open()` to create file objects and `.read()`/`.write()` to access text data
 ### lesson10 : Unittesting
-
-### lesson11 : Data Analysis I: Intro to Pandas
++ tutorial on how to use the built-in `unittest` module
++ importance of unittestsing in projects
++ best practices for writing unittests/docstrings
+### lesson11 : Visualizing Data with Matplolib
++ how to use `plt.scatter()`, `plt.hist()` and `plt.plot()`
++ basics of making hybrid plots
++ setting plot characteristics with key-word arguments (`kwargs`)
 ### lesson12 : Data Analysis II: Intro to Matplotlib
 ### Miscellaneous Resources
 + Especially for those new to programming, [Edabit](https://edabit.com) is a helpful website. This is a coding website filled with tons of practice problems, starting all the way from "Hello World" programs. When just starting, spending 15-30 minutes a day on Edabit will greatly improve one's coding skills. On this site, it is important to read other solutions after finishing a problem which can be done by clicking the "view other solutions" button after completing a challenge.
