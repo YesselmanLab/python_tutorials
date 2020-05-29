@@ -77,5 +77,8 @@ The Yesselman Group's integrated development environment (IDE) of choice is PyCh
 + basics of making hybrid plots
 + setting plot characteristics with key-word arguments (`kwargs`)
 ### lesson12 : Manipulating Data with Pandas
++ DataFrames as a way to store and manipulate ordered data
++ how to use pandas' built-in file IO system
++ combining DataFrames with matplotlib
 ### Miscellaneous Resources
 + Especially for those new to programming, [Edabit](https://edabit.com) is a helpful website. This is a coding website filled with tons of practice problems, starting all the way from "Hello World" programs. When just starting, spending 15-30 minutes a day on Edabit will greatly improve one's coding skills. On this site, it is important to read other solutions after finishing a problem which can be done by clicking the "view other solutions" button after completing a challenge.

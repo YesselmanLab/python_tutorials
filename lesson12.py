@@ -27,6 +27,9 @@ import pandas as pd
 # CSV (or csv, .csv): a generic plaintext file format in which data is separted by commas, with column names in the first row
 # and values in the lower rows
 
+# df: short for DataFrame (see definition below), often used at the end of a variable name to indicate that it is a pandas
+# DataFrame object or something similar
+
 ########################################################################################################################
 # Part II: DataFrame Basics
 # DataFrames are the functional backbone of pandas, serving as a highly tactile data holder. Consider the below data:
@@ -111,4 +114,99 @@ animal_df = pd.read_csv("data/animals.csv")
 ########################################################################################################################
 # Part IV: Basic DataFrame Manipulation: Slicing and Sorting
 #
+# The power of manipulating pandas dataframes is that choices made in the column space propagate into the row space and 
+# individual groupings of data can be moved around or removed in tandem. Two of the most common DataFrame manipulations 
+# are to slice (or filter) and Sort. On the slicing front, there are a handful  of common use cases:
 
+# 1. Only keeping desired columns:
+# The general format is SLICED_DF = ORIG_DF[['col_name1','col_name2',...]]
+names_only = animal_df[['animal',"uniq_id"]]
+#print(names_only)
+
+# 2. Only keeping desired rows:
+# To slice by rows, you can make use of the .loc[] method, which can take a list of integers as input. Below is a simple 
+# example of this
+select_rows = animal_df.loc[[0,1,2,3]]
+#print(select_rows)
+
+# 3. Conditionally keeping desired rows:
+# This is similar to the method shown in #1 above. Here virtually any logic can be used to slice the data, but notice that
+# the synatx is a little different. Instead of 'and'/'or', the operators '&'/'|' are used, and each boolean statement
+# should be surrounded in parantheses, as seen below:
+
+lions_and_tigers = animal_df[(animal_df["animal"] == "tiger") | (animal_df["animal"] == "lion")]
+# print(lions_and_tigers)
+
+# Sorting is definitely more nuanced than slicing, and some common examples are shown below:
+
+# 1. Sorting by a single column's values
+# This is done with the .sort_values() method. This method is driven by the "by" argument, which is set equal to the column(s) 
+# that will be used for row sorting. It is possible to use multiple column names, but that will be covered in the next item. In 
+# both instances, however, the column names must be presented as a list of strings.  Here, it is a good idea to use the key
+# word argument "inplace", which specifies whether or not the existing dataframe will be altered or if a new one will be made.
+# Consider the below example:
+
+#print(animal_df)
+animal_df.sort_values(by=["animal"],inplace=True)
+#print(animal_df)
+
+# 2. Sorting by multiple column valuees
+# As with item 1 above, this is achieved with the .sort_values() method, but instead multiple items are included in the "by" 
+# variable assignment. It should be noted that they will be sorted in the order they are lists. That is, in the below example,
+# the entries will be sorted by animal identity, then within each animal, they will be sorted by the values in the "water_need"
+# column.
+
+#print(animal_df)
+animal_df.sort_values(by=["animal","water_need"],inplace=True)
+#print(animal_df)
+########################################################################################################################
+# Part V: Using Pandas with matplotlib
+
+# Pandas is also extremely powerful when combined with matplotlib to produce plots. Conside the below example:
+import matplotlib.pyplot as plt
+
+
+# Another powerful aspect of Pandas is how well it meshes with matplotlib for plotting. Similar to dictionaries, pandas
+# dataframes associatively store information, and this can be leveraged when plotting data. Consider the below code and how 
+# little has to be done to plot a significant amount of data. While this is a single example of how to use pandas and matplotlib,
+# using pandas for plotting is something that you will get better at as you use it more.
+
+df = pd.read_csv("data/graphing_data.csv")
+
+# loading the data into the chart
+for col in df:
+    if col != 'x':
+        plt.plot(df['x'],df[col],label=col)
+
+# annotating the chart
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('pandas is great for plotting!')
+plt.legend()
+#plt.show()
+########################################################################################################################
+# Part VI: Moving forward with Pandas
+
+# Clearly you can do a lot with pandas, but in this tutorial we only just scratched the surface. As before, the best way 
+# to improve your skills and get things accomplished are to use the documenation for pandas (https://pandas.pydata.org/docs/user_guide/index.html#user-guide)
+# and to use websites like StackOverflow or whatever else you can find on google!
+########################################################################################################################
+# Homework
+# (T/F) A csv has to have column names.
+# (T/F) Pandas makes file input/output quick and deals with data conversion automatically.
+
+
+# Make a dataframe from the data/graphing_data.csv file and only keep the rows where x >= 0.
+
+
+# Add a new Series to dataframe called tangent, which is equivalent to y = tan(x)
+
+
+# Chart the data contanied with the DataFrame as was done above in Part V.
+
+
+# Make a dataframe from the data/students.csv file and sort the entries by name. Save the .csv as data/students_alphabetical.csv
+
+
+# Make a dataframe from the recently created data/students_alphabetical.csv file and plot the scores as a plt.hist(). Next, filter out
+# scores lower than 80 and make another plot
