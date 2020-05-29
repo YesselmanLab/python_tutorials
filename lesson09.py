@@ -7,7 +7,7 @@
 # quickly become difficult/impossible to maintain. In python, this can be circumvented with an import statement, which 
 # allows you to import another file/module's functions and classes. Uncomment line 12 and run this script to see what happens:
 
-import testmodule 
+import testmodule
 
 #testmodule.helloworld()
 
@@ -40,7 +40,8 @@ import testmodule
 # the import statement is "import MODULE". Above we imported the lcoal testmodule.py as testmodule. This module also contains
 # a TestClass class. In the space below, create an instance of this class and call its method ".show()"
 
-
+test = testmodule.TestClass(1)
+test.show()
 
 # Distributed modules are ones that either come with python or have to be installed to your machine. Distributed modules can 
 # be accessed by python files from anywhere in the computer. This is different from local modules as moving to a different 

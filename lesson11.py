@@ -62,7 +62,7 @@ plt.title("an example scatter plot")
 #plt.show()
 
 # if instead you would like to save the plot as a file, you can call .savefig(), which takes the .png filename as a path. # Note that other extensions can be used, but they must be legitmiate image formats like .pdf, etc
-# plt.savefig("lesson11scatter.png")
+#plt.savefig("lesson11scatter.png")
 
 # the last method that always needs to be called is the .clf() method. This is because there is only one "plt" object at a
 # time in python and if you didn't clear it out, everything would just be stacked on top. On the other hand, this can 
@@ -82,7 +82,7 @@ y_values = [x/2 + 20 for x in x_values]
 
 # inserting the plot values into the plot() and setting the x/y labels as well as the title. Note that if desired, only
 # the y values need to be given to the plot() method
-plt.plot(x_values,y_values)
+plt.plot(y_values)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.title("an example line plot")
@@ -147,7 +147,7 @@ plt.ylabel("score")
 plt.title("cpp_expert_scores")
 # the method legend() will create a legend in the plot with names for the data series, if applicable
 plt.legend()
-#plt.show()
+plt.show()
 plt.clf()
 
 # With hybrid plots, virtually anything is possible, but it is important to remember that there is only one plt object
